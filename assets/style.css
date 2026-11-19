@@ -159,6 +159,9 @@ body.menu-open .drawer { transform: none; }
   mask-image: linear-gradient(to top, transparent, #000 70%);
   -webkit-mask-image: linear-gradient(to top, transparent, #000 70%);
 }
+.hero-sub .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-sub .shade-top { height: 7rem; background: linear-gradient(to bottom, rgba(0,0,0,.5), transparent); }
+.shade-sub { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,.3) 50%, rgba(0,0,0,.1)); }
 .hero-sub .copy { position: relative; padding-bottom: 3rem; }
 .hero-sub .kicker { margin-bottom: .75rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; color: rgba(255,255,255,.75); }
 .hero-sub h1 { font-size: 3rem; line-height: 1; font-weight: 700; letter-spacing: -.03em; }
@@ -283,6 +286,8 @@ body.menu-open .drawer { transform: none; }
 .contact { display: grid; align-items: center; gap: 3.5rem; min-height: 80svh; padding-top: 8rem; padding-bottom: 5rem; }
 @media (min-width: 48rem) { .contact { grid-template-columns: 1fr 1fr; } }
 .contact .intro { max-width: 28rem; }
+.contact .photo { aspect-ratio: 4 / 5; overflow: hidden; background: var(--placeholder); }
+.contact .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
 .contact .mark {
   aspect-ratio: 4 / 3; background: var(--placeholder); position: relative; overflow: hidden;
   display: flex; align-items: flex-end; padding: 1.5rem;
